@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Blauer Nue';
+    src: url('../Fontes/Blauer Nue/BlauerNue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gendy';
+    src: url('../Fontes/Gendy/Gendy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Jaguar';
+    src: url('../Fontes/Jaguar/Jaguar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Maison';
+    src: url('../Fontes/Maison/Maison.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Moisette';
+    src: url('../Fontes/Moisette/Moisette.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Nakytta';
+    src: url('../Fontes/Nakytta/Nakytta.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('../Fontes/Nord/Nord.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oblong';
+    src: url('../Fontes/Oblong/Oblong.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'strong';
+    src: url('../Fontes/strong/Strong.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Things';
+    src: url('../Fontes/Things/Things.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.font-blauer{
+    font-family: 'Blauer Nue';
+}
+
+.font-gendy{
+    font-family: 'Gendy';
+}
+
+.font-jaguar{
+    font-family: 'Jaguar';
+}
+
+.font-maison{
+    font-family: 'Maison';
+}
+
+.font-moisette{
+    font-family: 'Moisette';
+}
+
+.font-nakytta{
+    font-family: 'Nakytta';
+}
+
+.font-nord{
+    font-family: 'Nord';
+}
+
+.font-oblong{
+    font-family: 'Oblong';
+}
+
+.font-strong{
+    font-family: 'strong';
+}
+
+.font-things{
+    font-family: 'Things';
+}
+
+.font-roboto{
+    font-family: 'Roboto';
+}

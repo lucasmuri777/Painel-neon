@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/fontes.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>RG GASPAR</title>
+</head>
+<body>
+    <div class="container">
+        <div id="controls">
+            <div class="controls-wrapper">
+                <div class="control-wrapper">
+                    <label for="textarea-neon">Texto:</label>
+                    <textarea id="textarea-neon" placeholder="Escreva seu texto aqui">Texto Neon</textarea>
+                </div>
+                <div class="control-wrapper">
+                    <label for="select-neon">Material:</label>
+                    <select id="select-neon">
+                        <option value="neon">Neon Flex</option>
+                        <option value="neon2">Neon</option>
+                        <option value="neon3">Neon de Vidro</option>
+                        <option value="neon4">Letra caixa</option>
+                    </select>
+                </div>
+                <div class="control-wrapper">
+                    <label for="font">Fonte:</label>
+                    <select id="font">
+                        <option value="Roboto" class="font-roboto">Roboto</option>
+                        <option value="Blauer Nue" class="font-blauer">Blauer Nue</option>
+                        <option value="Gendy" class="font-gendy">Gendy</option>
+                        <option value="Jaguar" class="font-jaguar">Jaguar</option>
+                        <option value="Maison" class="font-maison">Maison</option>
+                        <option value="Moisette" class="font-moisette">Moisette</option>
+                        <option value="Nakytta" class="font-nakytta">Nakytta</option>
+                        <option value="Nord" class="font-nord">Nord</option>
+                        <option value="Oblong" class="font-oblong">Oblong</option>
+                        <option value="strong" class="font-strong">Strong</option>
+                        <option value="Things" class="font-things">Things</option>
+                        
+                    </select>
+                </div>
+                <div class="control-wrapper">
+                    <label for="color">Cor:</label>
+                    <input type="color" id="color">
+                </div>
+                <div class="control-wrapper">
+                    <label for="size">Tamanho:</label>
+                    <input type="range" id="size" min="1" max="100" value="50">
+                </div>
+                <div class="control-wrapper">
+                    <button id="generate">Gerar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="tela">
+            <h2>Texto Neon</h2>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
