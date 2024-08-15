@@ -33,7 +33,7 @@ html,body{
 }
 /*CONTROLES DO PAINEL NEON*/
 #controls{
-    width: 50%;
+    width: 40%;
     height: 100%;
 }
 .controls-wrapper{
@@ -183,7 +183,7 @@ input[type="range"]::-moz-range-track {
 }
 
 #tela{
-    width: 50%;
+    width: 60%;
     background-color: rgb(21, 21, 21, 1);
     height: 100%;
     position: relative;
