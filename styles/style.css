@@ -8,15 +8,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 html,body{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    background-color: #101010;
 }
 
+/*CONTAINER DO FORMULARIO DE NEON*/
 .container{
     height: 100%;
     width: 100%;
@@ -26,6 +28,10 @@ html,body{
     display: flex;
     flex-direction: row;
 }
+.container .control-wrapper label{
+    color: white;
+}
+/*CONTROLES DO PAINEL NEON*/
 #controls{
     width: 50%;
     height: 100%;
@@ -44,11 +50,144 @@ html,body{
     gap: 10px;
     padding: 0px;
 }
+/*MIN MAX e ATUAL TAMANHO DO NEON*/
+.controls-wrapper .control-wrapper .min-max-actual{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls-wrapper .control-wrapper .min-max-actual span{
+    color: white;
+}
+.controls-wrapper .control-wrapper .min-max-actual #min,
+.controls-wrapper .control-wrapper .min-max-actual #max{
+    font-size: 12px;
+}
+.controls-wrapper .control-wrapper .min-max-actual #actual{
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    color: #101010;
+    border-radius: 4px;
+    padding: 8px 8px;
+}
+/*BOTAO DE GERAR E ENVIAR INFORMAÇÔES DO NEON POR WPP*/
+.controls-wrapper .control-wrapper button{
+    background-color: #fb0100;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 5px;
+}
+/*TEXTEAREA ONDE ESCREVE A PALAVRA DO TEXTO NEON*/
+.controls-wrapper .control-wrapper textarea{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 5px;
+    padding-top: 5px;
+    max-height: 50px;
+    min-height: 50px;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: #151515;
+    color: white;
+    border: 1px solid rgb(80, 80, 80);
+}
+.controls-wrapper .control-wrapper select{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 5px;
+    padding-top: 5px;
+    background-color: #151515;
+    color: white;
+    border: 1px solid rgb(80, 80, 80);
+}
+
+/*ESTILIZANDO O INPUT COLOR*/
+.control-wrapper .custom-color {
+    position: relative;
+    display: inline-block;
+}
+
+
+.control-wrapper .custom-color input[type="color"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.control-wrapper .custom-color span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--neon-color); /* Cor padrão */
+    border: 2px solid rgb(80, 80, 80);
+}
+
+.control-wrapper .custom-color input[type="color"]:hover + span {
+    border-color: #333;
+}
+
+.control-wrapper .custom-color input[type="color"]:active + span {
+    border-color: #555;
+}
+/*ESTILIZANDO A LINHA DO TYPE RANGE*/
+/* Estilizando a trilha (track) */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(80,80,80);
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity .15s ease-in-out;
+}
+
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+/* Estilizando o thumb (a bolinha) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+}
+
+input[type="range"]::-moz-range-track {
+    background: rgb(80, 80, 80);
+    height: 8px;
+    border-radius: 5px;
+}
+
 #tela{
     width: 50%;
-    background-color: black;
+    background-color: rgb(21, 21, 21, 1);
     height: 100%;
     position: relative;
+    border-radius: 4px;
 }
 
 #tela h2{
@@ -67,3 +206,14 @@ html,body{
       0 0 1px var(--neon-color),
       0 0 15px var(--neon-color);
 }
+
+@media screen and (max-width: 800px) {
+    .container{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    #controls,#tela{
+        width: 100%;
+    }
+}
+

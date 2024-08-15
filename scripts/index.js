@@ -4,6 +4,7 @@ let fontInput = document.querySelector('#font');
 let colorInput = document.querySelector('#color');
 let sizeInput = document.querySelector('#size');
 let generateButton = document.querySelector('#generate');
+let tamanhoText = document.querySelector('#actual');
 
 let textoTela = document.querySelector('#tela h2');
 
@@ -32,4 +33,5 @@ colorInput.addEventListener('change',(e)=>{
 /*Função que muda o tamanho*/
 sizeInput.addEventListener('change',(e)=>{
     document.documentElement.style.setProperty('--neon-size', e.target.value + 'px');
+    tamanhoText.innerHTML = e.target.value + 'M';
 })
