@@ -235,6 +235,7 @@ input[type="range"]::-moz-range-track {
     position: relative;
     border-radius: 4px;
     overflow-y: auto;
+    background-image: url('../BG/bg-2.jpg');
 }
 #tela .tela-neon::before {
     content: '';
@@ -251,6 +252,7 @@ input[type="range"]::-moz-range-track {
     height: 20%;
     display: flex;
     gap: 0px;
+    
 }
 
 #tela .tela-backgrounds .glide{
