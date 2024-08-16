@@ -181,6 +181,42 @@ input[type="range"]::-moz-range-track {
     height: 8px;
     border-radius: 5px;
 }
+/*Alinhammento options*/
+.align-forms {
+    display: flex;
+    gap: 10px;
+}
+.align-forms input[type="radio"] {
+    display: none; /* Esconde o botão de rádio padrão */
+}
+
+.align-forms label {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+}
+
+.align-forms label svg {
+    fill: rgb(80, 80, 80);
+    transition: all 0.3s ease;
+}
+
+.align-forms input[type="radio"]:checked + label {
+    background-color: transparent;
+    border-color: white;
+}
+
+.align-forms input[type="radio"]:checked + label svg {
+    fill: white;
+}
+
+.align-forms label:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
 #tela{
     width: 60%;
@@ -207,6 +243,31 @@ input[type="range"]::-moz-range-track {
       0 0 0px var(--neon-color),
       0 0 1px var(--neon-color),
       0 0 15px var(--neon-color);
+    padding: 0px 10px;
+}
+#tela h2.off{
+    text-shadow: none;
+}
+#tela #on-off-effect{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(80, 80, 80);
+    font-size: 20px;
+}
+#tela #on-off-effect:hover{
+    background-color: rgb(50, 50, 50);
+}
+#tela #on-off-effect.active{
+    color: white;
 }
 ::-webkit-scrollbar {
     width: 6px;
@@ -222,9 +283,9 @@ input[type="range"]::-moz-range-track {
     background: #888;
   }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .container{
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 10px;
     }
     #controls,#tela{

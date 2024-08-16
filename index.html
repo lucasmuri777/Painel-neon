@@ -9,14 +9,18 @@
 </head>
 <body>
     <div class="container">
+        <div id="tela">
+            <div id="on-off-effect" class="active"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M176,74.78V72a16,16,0,0,0-16-16H136V16a8,8,0,0,0-16,0V56H96A16,16,0,0,0,80,72v2.78A111.73,111.73,0,0,0,16,176a8,8,0,0,0,8,8H88a40,40,0,0,0,80,0h64a8,8,0,0,0,8-8A111.73,111.73,0,0,0,176,74.78ZM128,208a24,24,0,0,1-24-24h48A24,24,0,0,1,128,208Z"></path></svg></div>
+            <h2>Texto Neon</h2>
+        </div>
         <div id="controls">
             <div class="controls-wrapper">
                 <div class="control-wrapper">
-                    <label for="textarea-neon">Texto:</label>
+                    <label for="textarea-neon">Qual será o texto do seu Neon personalizado?</label>
                     <textarea id="textarea-neon" placeholder="Escreva seu texto aqui">Texto Neon</textarea>
                 </div>
                 <div class="control-wrapper">
-                    <label for="select-neon">Material:</label>
+                    <label for="select-neon">Selecione o tipo de material:</label>
                     <select id="select-neon">
                         <option value="neon">Neon Flex</option>
                         <option value="neon2">Neon</option>
@@ -49,25 +53,35 @@
                     </label>
                 </div>
                 <div class="control-wrapper">
-                    <label for="size">Tamanho:</label>
+                    <label>Alinhamento:</label>
+                    <div class="align-forms">
+                        <input type="radio" id="left" name="align" value="left">
+                        <label for="left"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.83 352h262.34A12.82 12.82 0 0 0 288 339.17v-38.34A12.82 12.82 0 0 0 275.17 288H12.83A12.82 12.82 0 0 0 0 300.83v38.34A12.82 12.82 0 0 0 12.83 352zm0-256h262.34A12.82 12.82 0 0 0 288 83.17V44.83A12.82 12.82 0 0 0 275.17 32H12.83A12.82 12.82 0 0 0 0 44.83v38.34A12.82 12.82 0 0 0 12.83 96zM432 160H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0 256H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg></label>
+                        <input type="radio" id="center" name="align" value="center">
+                        <label for="center"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M432 160H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0 256H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM108.1 96h231.81A12.09 12.09 0 0 0 352 83.9V44.09A12.09 12.09 0 0 0 339.91 32H108.1A12.09 12.09 0 0 0 96 44.09V83.9A12.1 12.1 0 0 0 108.1 96zm231.81 256A12.09 12.09 0 0 0 352 339.9v-39.81A12.09 12.09 0 0 0 339.91 288H108.1A12.09 12.09 0 0 0 96 300.09v39.81a12.1 12.1 0 0 0 12.1 12.1z"></path></svg></label>  
+                        <input type="radio" id="right" name="align" value="right">
+                        <label for="right"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 224h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16zm416 192H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm3.17-384H172.83A12.82 12.82 0 0 0 160 44.83v38.34A12.82 12.82 0 0 0 172.83 96h262.34A12.82 12.82 0 0 0 448 83.17V44.83A12.82 12.82 0 0 0 435.17 32zm0 256H172.83A12.82 12.82 0 0 0 160 300.83v38.34A12.82 12.82 0 0 0 172.83 352h262.34A12.82 12.82 0 0 0 448 339.17v-38.34A12.82 12.82 0 0 0 435.17 288z"></path></svg></label>
+                    </div>
+                </div>
+                <div class="control-wrapper">
+                    <label for="size">Selecione o tamanho do neon:</label>
                     <input type="range" id="size" min="15" max="100" value="50" step="5">
                     <div class="min-max-actual">
-                        <span id="min">15M</span>
-                        <span id="actual">50M</span>
-                        <span id="max">100M</span>
+                        <span id="min">15CM</span>
+                        <span id="actual">50CM</span>
+                        <span id="max">100CM</span>
                     </div>
                 </div>
                 <div class="control-wrapper">
                     <button id="generate">Gerar</button>
+                    
                 </div>
 
             </div>
 
         </div>
 
-        <div id="tela">
-            <h2>Texto Neon</h2>
-        </div>
+        
     </div>
         
     
