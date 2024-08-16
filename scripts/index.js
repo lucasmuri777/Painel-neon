@@ -61,3 +61,5 @@ sizeInput.addEventListener('change',(e)=>{
     document.documentElement.style.setProperty('--neon-size', e.target.value + 'px');
     tamanhoText.innerHTML = e.target.value + 'CM';
 })
+
+/*Função que muda o fundo da tela*/

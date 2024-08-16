@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="styles/fontes.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>RG GASPAR</title>
@@ -10,8 +12,26 @@
 <body>
     <div class="container">
         <div id="tela">
-            <div id="on-off-effect" class="active"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M176,74.78V72a16,16,0,0,0-16-16H136V16a8,8,0,0,0-16,0V56H96A16,16,0,0,0,80,72v2.78A111.73,111.73,0,0,0,16,176a8,8,0,0,0,8,8H88a40,40,0,0,0,80,0h64a8,8,0,0,0,8-8A111.73,111.73,0,0,0,176,74.78ZM128,208a24,24,0,0,1-24-24h48A24,24,0,0,1,128,208Z"></path></svg></div>
-            <h2>Texto Neon</h2>
+            <div class="tela-neon">
+                <div id="on-off-effect" class="active"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M176,74.78V72a16,16,0,0,0-16-16H136V16a8,8,0,0,0-16,0V56H96A16,16,0,0,0,80,72v2.78A111.73,111.73,0,0,0,16,176a8,8,0,0,0,8,8H88a40,40,0,0,0,80,0h64a8,8,0,0,0,8-8A111.73,111.73,0,0,0,176,74.78ZM128,208a24,24,0,0,1-24-24h48A24,24,0,0,1,128,208Z"></path></svg></div>
+                <h2>Texto Neon</h2>
+            </div>
+            <div class="tela-backgrounds">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <img src="BG/bg-1.jpg" alt="BG-1" />
+                            </li>
+                            <li class="glide__slide"> <img src="BG/bg-2.jpg" alt="BG-1" /></li>
+                            <li class="glide__slide"> <img src="BG/bg-3.jpg" alt="BG-1" /></li>
+                            <li class="glide__slide"> <img src="BG/bg-5.jpg" alt="BG-1" /></li>
+                            <li class="glide__slide"> <img src="BG/bg-6.jpg" alt="BG-1" /></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
         </div>
         <div id="controls">
             <div class="controls-wrapper">
@@ -19,6 +39,7 @@
                     <label for="textarea-neon">Qual será o texto do seu Neon personalizado?</label>
                     <textarea id="textarea-neon" placeholder="Escreva seu texto aqui">Texto Neon</textarea>
                 </div>
+                
                 <div class="control-wrapper">
                     <label for="select-neon">Selecione o tipo de material:</label>
                     <select id="select-neon">
@@ -83,7 +104,8 @@
 
         
     </div>
-        
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script type="text/javascript" src="scripts/slider.js"></script>
     
     <script type="text/javascript" src="scripts/index.js"></script>
 </body>
