@@ -4,6 +4,10 @@
     --font-family: 'Roboto', sans-serif;  
     --neon-size: 50px;
 }
+::selection {
+    background: transparent; /* Remove o fundo azul */
+    color: inherit; /* Mantém a cor do texto */
+}
 *{
     margin: 0;
     padding: 0;
@@ -327,6 +331,19 @@ input[type="range"]::-moz-range-track {
 #tela #on-off-effect.active{
     color: white;
     border-color: white;
+}
+
+/*Wrapper do preço final*/
+.preco-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap!important;
+    flex-direction: row!important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0!important;
+    border-top: 1px solid rgb(80, 80, 80);
+    border-bottom: 1px solid rgb(80, 80, 80);
 }
 ::-webkit-scrollbar {
     width: 6px;
